@@ -10,7 +10,7 @@ public class SongModel {
     public String path;
     public String album;
     public String artist;
-    public int duration;
+    public String duration;
 
     public SongModel() {
     }
@@ -35,11 +35,11 @@ public class SongModel {
         this.artist = artist;
     }
 
-    public void setDuration(int duration) {
+    public void setDuration(String duration) {
         this.duration = duration;
     }
 
-    public SongModel(int image, String name, String path, String album, String artist, int duration) {
+    public SongModel(int image, String name, String path, String album, String artist, String duration) {
         this.image = image;
         this.name = name;
         this.path = path;
@@ -68,7 +68,7 @@ public class SongModel {
         return artist;
     }
 
-    public int getDuration() {
+    public String getDuration() {
         return duration;
     }
 }

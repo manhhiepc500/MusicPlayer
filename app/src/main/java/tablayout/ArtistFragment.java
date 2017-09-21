@@ -13,10 +13,10 @@ import com.hiepnd.musicplayer.R;
  * Created by hiepn on 8/22/2017.
  */
 
-public class Tab2 extends Fragment {
+public class ArtistFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.tab2,container,false);
+        return inflater.inflate(R.layout.layout_artist_fragment,container,false);
     }
 }

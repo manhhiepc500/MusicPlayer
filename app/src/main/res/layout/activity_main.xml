@@ -29,7 +29,7 @@
             android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:tabSelectedTextColor="#000000" />
+            app:tabSelectedTextColor="@color/colorAccent" />
 
     </android.support.design.widget.AppBarLayout>
 
@@ -40,7 +40,6 @@
         android:layout_above="@+id/relativeLayout"
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="41dp"
-        android:layout_marginEnd="20dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
     <RelativeLayout
@@ -48,7 +47,8 @@
         android:layout_height="match_parent">
 
         <RelativeLayout
-            android:background="#e8ebf0"
+            android:clickable="true"
+            android:background="@color/colorPrimary"
             android:id="@+id/relativeLayout"
             android:layout_width="match_parent"
             android:layout_height="60dp"
@@ -89,10 +89,11 @@
                         android:ellipsize="end"
                         android:maxLines="1"
                         android:text="Song"
-                        android:textColor="#3a53cf"
+                        android:textColor="#F8362D"
                         android:textSize="18sp" />
 
                     <TextView
+                        android:textColor="#FFFFFF"
                         android:id="@+id/tvArtist"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -105,10 +106,9 @@
                 <ImageView
                     android:layout_marginRight="10dp"
                     android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginTop="16dp"
+                    android:layout_height="match_parent"
                     android:layout_toRightOf="@+id/lnPlayMusic"
-                    android:src="@drawable/icon_play" />
+                    android:src="@drawable/ic_play_white" />
             </LinearLayout>
         </RelativeLayout>
     </RelativeLayout>
